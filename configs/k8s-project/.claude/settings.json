@@ -1,0 +1,74 @@
+{
+  "claude": {
+    "version": "1.0.0",
+    "projectType": "kubernetes",
+    "settings": {
+      "defaultModel": "claude-3-5-sonnet-20241022",
+      "maxTokens": 8192,
+      "temperature": 0.2,
+      "contextFiles": [
+        "CLAUDE.md",
+        "*.yaml",
+        "*.yml",
+        "kustomization.yaml"
+      ],
+      "ignorePatterns": [
+        "*.bak",
+        "*.tmp",
+        ".kube/**"
+      ],
+      "codeStyle": {
+        "formatter": "yamlfmt",
+        "validateBeforeSuggest": true,
+        "preferKustomize": true,
+        "useNamespaces": true
+      },
+      "suggestions": {
+        "enableManifestGeneration": true,
+        "enableSecurityReview": true,
+        "enableBestPractices": true,
+        "suggestResourceLimits": true,
+        "suggestHealthChecks": true,
+        "suggestSecurityContext": true
+      },
+      "security": {
+        "checkSecrets": true,
+        "validateRBAC": true,
+        "checkNetworkPolicies": true,
+        "suggestPodSecurity": true,
+        "validateImageTags": true
+      },
+      "workflows": {
+        "preCommit": {
+          "runKubeval": false,
+          "runKubeScore": false,
+          "validateYAML": true
+        },
+        "onSave": {
+          "format": true,
+          "validate": false
+        }
+      }
+    },
+    "prompts": {
+      "defaultPrompt": "prompts/iac-generation.md",
+      "securityReview": "prompts/security-review.md",
+      "debugging": "prompts/debugging.md"
+    },
+    "integrations": {
+      "kubernetes": {
+        "version": ">= 1.25",
+        "validateManifests": true,
+        "useKustomize": true
+      },
+      "tools": {
+        "kubectl": {
+          "version": ">= 1.25"
+        },
+        "kustomize": {
+          "enabled": true
+        }
+      }
+    }
+  }
+}
