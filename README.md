@@ -1,5 +1,7 @@
 # Claude Code DevOps Toolkit
 
+[![Lint](https://github.com/hammadhaqqani/claude-code-devops-toolkit/actions/workflows/lint.yml/badge.svg)](https://github.com/hammadhaqqani/claude-code-devops-toolkit/actions/workflows/lint.yml)
+[![GitHub Pages](https://github.com/hammadhaqqani/claude-code-devops-toolkit/actions/workflows/pages.yml/badge.svg)](https://hammadhaqqani.github.io/claude-code-devops-toolkit/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A comprehensive collection of CLAUDE.md templates, curated prompts, automation scripts, and project configurations for using Claude Code effectively in DevOps workflows.
