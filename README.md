@@ -179,6 +179,12 @@ For issues, questions, or suggestions, please open an issue on GitHub or reach o
 **Maintained by**: [hammadhaqqani](https://github.com/hammadhaqqani)
 
 **Last Updated**: February 2026
+
+## See Also
+
+- [Awesome DevOps AI](https://github.com/hammadhaqqani/awesome-devops-ai) - Curated list of 100+ AI tools for DevOps, SRE, and Platform Engineering
+- [Free AI & DevOps Tools](https://hammadhaqqani.com/tools) - 41 free browser-based AI and DevOps tools
+
 ---
 
 ## Support
